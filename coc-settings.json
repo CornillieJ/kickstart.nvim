@@ -1,0 +1,46 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "python", "json", "css", "scss", "html", "yaml"],
+  "coc.preferences.diagnostic.displayByAle": false,
+  "coc.preferences.signature.trigger": ["(", ","],
+  "coc.preferences.hoverTarget": "float",
+  "languageserver": {
+    "pyright": {
+      "command": "pyright-langserver",
+      "args": ["--stdio"],
+      "filetypes": ["python"],
+      "settings": {
+        "python": {
+          "pythonPath": "C:\\Users\\jeffr\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe" 
+        }
+      }
+    },
+    "omnisharp": {
+      "command": "omnisharp",
+      "args": ["--languageserver", "--hostPID", "${hostPid}"],
+      "rootPatterns": [".git", ".sln"],
+      "filetypes": ["cs"],
+      "initializationOptions": {
+        "displayName": "OmniSharp",
+        "rootPath": null
+      }
+    }
+  },
+  "tsserver.enable": true,
+  "tsserver.maxTsServerMemory": 4096,
+  "tsserver.log": "verbose",
+  "tsserver.formatOnType": true,
+  "tsserver.npm": "C:\Tools\nodejs\npm",
+  "json.schemas": [
+    {
+      "fileMatch": ["tsconfig.json"],
+      "url": "http://json.schemastore.org/tsconfig"
+    },
+    {
+      "fileMatch": ["package.json"],
+      "url": "http://json.schemastore.org/package"
+    }
+  ],
+  "html.filetypes": ["html"],
+  "css.filetypes": ["css", "scss", "less"]
+}
+
